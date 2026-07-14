@@ -1,19 +1,240 @@
-portfolio/
-│
-├── index.html              // หน้าแรก
-├── profile.html            // ประวัติส่วนตัว
-├── education.html          // ประวัติการศึกษา
-├── activities.html         // ผลงานและกิจกรรม
-├── contact.html            // ติดต่อ
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-└── images/
-    ├── profile.jpg
-    ├── school.jpg
-    ├── project1.jpg
-    └── ...
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | หน้าแรก</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Kanit',sans-serif;
+        }
+
+        body{
+            background:#f4fff6;
+            color:#2f4f3f;
+        }
+
+        nav{
+            background:#9ed9a6;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 10%;
+        }
+
+        nav h2{
+            color:white;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            color:#2f4f3f;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .hero img{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            border:8px solid #9ed9a6;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        .hero h1{
+            font-size:42px;
+            color:#2f6d45;
+        }
+
+        .hero h3{
+            margin:10px 0;
+            color:#5d8b68;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin:auto;
+            line-height:1.8;
+        }
+
+        .button{
+            display:inline-block;
+            margin-top:30px;
+            padding:12px 30px;
+            background:#74c69d;
+            color:white;
+            text-decoration:none;
+            border-radius:30px;
+            transition:.3s;
+        }
+
+        .button:hover{
+            background:#52b788;
+        }
+
+        .menu{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            padding:50px 0;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card h2{
+            color:#2f6d45;
+            margin-bottom:10px;
+        }
+
+        .card a{
+            display:inline-block;
+            margin-top:15px;
+            text-decoration:none;
+            color:#52b788;
+            font-weight:bold;
+        }
+
+        footer{
+            background:#9ed9a6;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>My Portfolio</h2>
+
+<ul>
+
+<li><a href="index.html">หน้าแรก</a></li>
+
+<li><a href="profile.html">ประวัติส่วนตัว</a></li>
+
+<li><a href="education.html">การศึกษา</a></li>
+
+<li><a href="activities.html">ผลงาน</a></li>
+
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<h1>ธนชาติ พูนสุข</h1>
+
+<h3>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h3>
+
+<p>
+
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
+
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมข้อมูลส่วนตัว ประวัติการศึกษา ผลงาน กิจกรรม และความสามารถต่าง ๆ เพื่อใช้ประกอบการสมัครเข้าศึกษาต่อระดับมหาวิทยาลัย
+
+</p>
+
+<a href="profile.html" class="button">เริ่มต้น</a>
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+
+<h2>👤 ประวัติส่วนตัว</h2>
+
+<p>ข้อมูลทั่วไป ความสามารถ และความสนใจ</p>
+
+<a href="profile.html">อ่านต่อ</a>
+
+</div>
+
+<div class="card">
+
+<h2>🎓 การศึกษา</h2>
+
+<p>ประวัติการศึกษาและผลการเรียน</p>
+
+<a href="education.html">อ่านต่อ</a>
+
+</div>
+
+<div class="card">
+
+<h2>🏆 ผลงาน</h2>
+
+<p>กิจกรรม โครงงาน และเกียรติบัตร</p>
+
+<a href="activities.html">อ่านต่อ</a>
+
+</div>
+
+<div class="card">
+
+<h2>📞 ติดต่อ</h2>
+
+<p>ช่องทางการติดต่อและ Social Media</p>
+
+<a href="contact.html">อ่านต่อ</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Portfolio | ธนชาติ พูนสุข</p>
+
+</footer>
+
+</body>
+</html>
